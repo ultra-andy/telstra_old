@@ -12,7 +12,7 @@
 
 from setuptools import setup, find_packages  # noqa: H301
 
-NAME = "Telstra_Messaging"
+NAME = "Telstra_Messaging_Old"
 VERSION = "1.0.7"
 # To install the library, run the following
 #

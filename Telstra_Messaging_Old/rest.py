@@ -24,7 +24,7 @@ import six
 from six.moves.urllib.parse import urlencode
 import urllib3
 
-from Telstra_Messaging.exceptions import ApiException, ApiValueError
+from Telstra_Messaging_Old.exceptions import ApiException, ApiValueError
 
 
 logger = logging.getLogger(__name__)

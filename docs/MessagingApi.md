@@ -1,4 +1,4 @@
-# Telstra_Messaging.MessagingApi
+# Telstra_Messaging_Old.MessagingApi
 
 All URIs are relative to *https://tapi.telstra.com/v2*
 
@@ -28,17 +28,17 @@ Get MMS Status
 ```python
 from __future__ import print_function
 import time
-import Telstra_Messaging
-from Telstra_Messaging.rest import ApiException
+import Telstra_Messaging_Old
+from Telstra_Messaging_Old.rest import ApiException
 from pprint import pprint
-configuration = Telstra_Messaging.Configuration()
+configuration = Telstra_Messaging_Old.Configuration()
 # Configure OAuth2 access token for authorization: auth
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # Defining host is optional and default to https://tapi.telstra.com/v2
 configuration.host = "https://tapi.telstra.com/v2"
 # Create an instance of the API class
-api_instance = Telstra_Messaging.MessagingApi(Telstra_Messaging.ApiClient(configuration))
+api_instance = Telstra_Messaging_Old.MessagingApi(Telstra_Messaging_Old.ApiClient(configuration))
 messageid = 'messageid_example' # str | Unique identifier of a message - it is the value returned from a previous POST call to https://tapi.telstra.com/v2/messages/mms 
 
 try:
@@ -99,17 +99,17 @@ If no notification URL has been specified, it is possible to poll for the messag
 ```python
 from __future__ import print_function
 import time
-import Telstra_Messaging
-from Telstra_Messaging.rest import ApiException
+import Telstra_Messaging_Old
+from Telstra_Messaging_Old.rest import ApiException
 from pprint import pprint
-configuration = Telstra_Messaging.Configuration()
+configuration = Telstra_Messaging_Old.Configuration()
 # Configure OAuth2 access token for authorization: auth
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # Defining host is optional and default to https://tapi.telstra.com/v2
 configuration.host = "https://tapi.telstra.com/v2"
 # Create an instance of the API class
-api_instance = Telstra_Messaging.MessagingApi(Telstra_Messaging.ApiClient(configuration))
+api_instance = Telstra_Messaging_Old.MessagingApi(Telstra_Messaging_Old.ApiClient(configuration))
 message_id = 'message_id_example' # str | Unique identifier of a message - it is the value returned from a previous POST call to https://tapi.telstra.com/v2/messages/sms. 
 
 try:
@@ -169,12 +169,12 @@ Determine whether the MMS service is up or down.
 ```python
 from __future__ import print_function
 import time
-import Telstra_Messaging
-from Telstra_Messaging.rest import ApiException
+import Telstra_Messaging_Old
+from Telstra_Messaging_Old.rest import ApiException
 from pprint import pprint
 
 # Create an instance of the API class
-api_instance = Telstra_Messaging.MessagingApi()
+api_instance = Telstra_Messaging_Old.MessagingApi()
 
 try:
     # MMS Health Check
@@ -224,17 +224,17 @@ Messages are retrieved one at a time, starting with the earliest reply.  If the 
 ```python
 from __future__ import print_function
 import time
-import Telstra_Messaging
-from Telstra_Messaging.rest import ApiException
+import Telstra_Messaging_Old
+from Telstra_Messaging_Old.rest import ApiException
 from pprint import pprint
-configuration = Telstra_Messaging.Configuration()
+configuration = Telstra_Messaging_Old.Configuration()
 # Configure OAuth2 access token for authorization: auth
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # Defining host is optional and default to https://tapi.telstra.com/v2
 configuration.host = "https://tapi.telstra.com/v2"
 # Create an instance of the API class
-api_instance = Telstra_Messaging.MessagingApi(Telstra_Messaging.ApiClient(configuration))
+api_instance = Telstra_Messaging_Old.MessagingApi(Telstra_Messaging_Old.ApiClient(configuration))
 
 try:
     # Retrieve MMS Replies
@@ -291,17 +291,17 @@ Messages are retrieved one at a time, starting with the earliest reply.  The API
 ```python
 from __future__ import print_function
 import time
-import Telstra_Messaging
-from Telstra_Messaging.rest import ApiException
+import Telstra_Messaging_Old
+from Telstra_Messaging_Old.rest import ApiException
 from pprint import pprint
-configuration = Telstra_Messaging.Configuration()
+configuration = Telstra_Messaging_Old.Configuration()
 # Configure OAuth2 access token for authorization: auth
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # Defining host is optional and default to https://tapi.telstra.com/v2
 configuration.host = "https://tapi.telstra.com/v2"
 # Create an instance of the API class
-api_instance = Telstra_Messaging.MessagingApi(Telstra_Messaging.ApiClient(configuration))
+api_instance = Telstra_Messaging_Old.MessagingApi(Telstra_Messaging_Old.ApiClient(configuration))
 
 try:
     # Retrieve SMS Replies
@@ -358,18 +358,18 @@ Send MMS
 ```python
 from __future__ import print_function
 import time
-import Telstra_Messaging
-from Telstra_Messaging.rest import ApiException
+import Telstra_Messaging_Old
+from Telstra_Messaging_Old.rest import ApiException
 from pprint import pprint
-configuration = Telstra_Messaging.Configuration()
+configuration = Telstra_Messaging_Old.Configuration()
 # Configure OAuth2 access token for authorization: auth
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # Defining host is optional and default to https://tapi.telstra.com/v2
 configuration.host = "https://tapi.telstra.com/v2"
 # Create an instance of the API class
-api_instance = Telstra_Messaging.MessagingApi(Telstra_Messaging.ApiClient(configuration))
-body = Telstra_Messaging.SendMmsRequest() # SendMmsRequest | A JSON or XML payload containing the recipient's phone number and MMS message. The recipient number should be in the format '04xxxxxxxx' where x is a digit. 
+api_instance = Telstra_Messaging_Old.MessagingApi(Telstra_Messaging_Old.ApiClient(configuration))
+body = Telstra_Messaging_Old.SendMmsRequest() # SendMmsRequest | A JSON or XML payload containing the recipient's phone number and MMS message. The recipient number should be in the format '04xxxxxxxx' where x is a digit. 
 
 try:
     # Send MMS
@@ -429,18 +429,18 @@ Send multiple SMS in one API call.
 ```python
 from __future__ import print_function
 import time
-import Telstra_Messaging
-from Telstra_Messaging.rest import ApiException
+import Telstra_Messaging_Old
+from Telstra_Messaging_Old.rest import ApiException
 from pprint import pprint
-configuration = Telstra_Messaging.Configuration()
+configuration = Telstra_Messaging_Old.Configuration()
 # Configure OAuth2 access token for authorization: auth
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # Defining host is optional and default to https://tapi.telstra.com/v2
 configuration.host = "https://tapi.telstra.com/v2"
 # Create an instance of the API class
-api_instance = Telstra_Messaging.MessagingApi(Telstra_Messaging.ApiClient(configuration))
-payload = Telstra_Messaging.SendSmsMultiRequest() # SendSmsMultiRequest | A JSON payload containing the recipient's phone number and text message. This number can be in international format if preceeded by a '+' or in national format ('04xxxxxxxx') where x is a digit. 
+api_instance = Telstra_Messaging_Old.MessagingApi(Telstra_Messaging_Old.ApiClient(configuration))
+payload = Telstra_Messaging_Old.SendSmsMultiRequest() # SendSmsMultiRequest | A JSON payload containing the recipient's phone number and text message. This number can be in international format if preceeded by a '+' or in national format ('04xxxxxxxx') where x is a digit. 
 
 try:
     # Send Multiple SMS
@@ -495,18 +495,18 @@ Send an SMS Message to a single or multiple mobile number/s.
 ```python
 from __future__ import print_function
 import time
-import Telstra_Messaging
-from Telstra_Messaging.rest import ApiException
+import Telstra_Messaging_Old
+from Telstra_Messaging_Old.rest import ApiException
 from pprint import pprint
-configuration = Telstra_Messaging.Configuration()
+configuration = Telstra_Messaging_Old.Configuration()
 # Configure OAuth2 access token for authorization: auth
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # Defining host is optional and default to https://tapi.telstra.com/v2
 configuration.host = "https://tapi.telstra.com/v2"
 # Create an instance of the API class
-api_instance = Telstra_Messaging.MessagingApi(Telstra_Messaging.ApiClient(configuration))
-payload = Telstra_Messaging.SendSMSRequest() # SendSMSRequest | A JSON or XML payload containing the recipient's phone number and text message. This number can be in international format if preceeded by a '+' or in national format ('04xxxxxxxx') where x is a digit. 
+api_instance = Telstra_Messaging_Old.MessagingApi(Telstra_Messaging_Old.ApiClient(configuration))
+payload = Telstra_Messaging_Old.SendSMSRequest() # SendSMSRequest | A JSON or XML payload containing the recipient's phone number and text message. This number can be in international format if preceeded by a '+' or in national format ('04xxxxxxxx') where x is a digit. 
 
 try:
     # Send SMS
@@ -565,12 +565,12 @@ Determine whether the SMS service is up or down.
 ```python
 from __future__ import print_function
 import time
-import Telstra_Messaging
-from Telstra_Messaging.rest import ApiException
+import Telstra_Messaging_Old
+from Telstra_Messaging_Old.rest import ApiException
 from pprint import pprint
 
 # Create an instance of the API class
-api_instance = Telstra_Messaging.MessagingApi()
+api_instance = Telstra_Messaging_Old.MessagingApi()
 
 try:
     # SMS Health Check

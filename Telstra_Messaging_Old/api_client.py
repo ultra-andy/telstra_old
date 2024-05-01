@@ -23,10 +23,10 @@ import tempfile
 import six
 from six.moves.urllib.parse import quote
 
-from Telstra_Messaging.configuration import Configuration
-import Telstra_Messaging.models
-from Telstra_Messaging import rest
-from Telstra_Messaging.exceptions import ApiValueError
+from Telstra_Messaging_Old.configuration import Configuration
+import Telstra_Messaging_Old.models
+from Telstra_Messaging_Old import rest
+from Telstra_Messaging_Old.exceptions import ApiValueError
 
 
 class ApiClient(object):
@@ -279,7 +279,7 @@ class ApiClient(object):
             if klass in self.NATIVE_TYPES_MAPPING:
                 klass = self.NATIVE_TYPES_MAPPING[klass]
             else:
-                klass = getattr(Telstra_Messaging.models, klass)
+                klass = getattr(Telstra_Messaging_Old.models, klass)
 
         if klass in self.PRIMITIVE_TYPES:
             return self.__deserialize_primitive(data, klass)

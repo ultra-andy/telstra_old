@@ -1,4 +1,4 @@
-# Telstra_Messaging.AuthenticationApi
+# Telstra_Messaging_Old.AuthenticationApi
 
 All URIs are relative to *https://tapi.telstra.com/v2*
 
@@ -19,12 +19,12 @@ To generate an OAuth2 Authentication token, pass through your `Client key` and `
 ```python
 from __future__ import print_function
 import time
-import Telstra_Messaging
-from Telstra_Messaging.rest import ApiException
+import Telstra_Messaging_Old
+from Telstra_Messaging_Old.rest import ApiException
 from pprint import pprint
 
 # Create an instance of the API class
-api_instance = Telstra_Messaging.AuthenticationApi()
+api_instance = Telstra_Messaging_Old.AuthenticationApi()
 client_id = 'client_id_example' # str | 
 client_secret = 'client_secret_example' # str | 
 grant_type = 'client_credentials' # str |  (default to 'client_credentials')

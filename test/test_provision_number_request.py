@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import Telstra_Messaging
-from Telstra_Messaging.models.provision_number_request import ProvisionNumberRequest  # noqa: E501
-from Telstra_Messaging.rest import ApiException
+import Telstra_Messaging_Old
+from Telstra_Messaging_Old.models.provision_number_request import ProvisionNumberRequest  # noqa: E501
+from Telstra_Messaging_Old.rest import ApiException
 
 
 class TestProvisionNumberRequest(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestProvisionNumberRequest(unittest.TestCase):
     def testProvisionNumberRequest(self):
         """Test ProvisionNumberRequest"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = Telstra_Messaging.models.provision_number_request.ProvisionNumberRequest()  # noqa: E501
+        # model = Telstra_Messaging_Old.models.provision_number_request.ProvisionNumberRequest()  # noqa: E501
         pass
 
 

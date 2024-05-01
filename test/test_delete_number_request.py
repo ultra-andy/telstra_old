@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import Telstra_Messaging
-from Telstra_Messaging.models.delete_number_request import DeleteNumberRequest  # noqa: E501
-from Telstra_Messaging.rest import ApiException
+import Telstra_Messaging_Old
+from Telstra_Messaging_Old.models.delete_number_request import DeleteNumberRequest  # noqa: E501
+from Telstra_Messaging_Old.rest import ApiException
 
 
 class TestDeleteNumberRequest(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestDeleteNumberRequest(unittest.TestCase):
     def testDeleteNumberRequest(self):
         """Test DeleteNumberRequest"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = Telstra_Messaging.models.delete_number_request.DeleteNumberRequest()  # noqa: E501
+        # model = Telstra_Messaging_Old.models.delete_number_request.DeleteNumberRequest()  # noqa: E501
         pass
 
 

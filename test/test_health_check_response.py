@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import Telstra_Messaging
-from Telstra_Messaging.models.health_check_response import HealthCheckResponse  # noqa: E501
-from Telstra_Messaging.rest import ApiException
+import Telstra_Messaging_Old
+from Telstra_Messaging_Old.models.health_check_response import HealthCheckResponse  # noqa: E501
+from Telstra_Messaging_Old.rest import ApiException
 
 
 class TestHealthCheckResponse(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestHealthCheckResponse(unittest.TestCase):
     def testHealthCheckResponse(self):
         """Test HealthCheckResponse"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = Telstra_Messaging.models.health_check_response.HealthCheckResponse()  # noqa: E501
+        # model = Telstra_Messaging_Old.models.health_check_response.HealthCheckResponse()  # noqa: E501
         pass
 
 

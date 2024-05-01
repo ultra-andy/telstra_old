@@ -1,4 +1,4 @@
-# Telstra_Messaging.ProvisioningApi
+# Telstra_Messaging_Old.ProvisioningApi
 
 All URIs are relative to *https://tapi.telstra.com/v2*
 
@@ -22,18 +22,18 @@ Invoke the provisioning API to get a dedicated mobile number for an account or a
 ```python
 from __future__ import print_function
 import time
-import Telstra_Messaging
-from Telstra_Messaging.rest import ApiException
+import Telstra_Messaging_Old
+from Telstra_Messaging_Old.rest import ApiException
 from pprint import pprint
-configuration = Telstra_Messaging.Configuration()
+configuration = Telstra_Messaging_Old.Configuration()
 # Configure OAuth2 access token for authorization: auth
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # Defining host is optional and default to https://tapi.telstra.com/v2
 configuration.host = "https://tapi.telstra.com/v2"
 # Create an instance of the API class
-api_instance = Telstra_Messaging.ProvisioningApi(Telstra_Messaging.ApiClient(configuration))
-body = Telstra_Messaging.ProvisionNumberRequest() # ProvisionNumberRequest | A JSON payload containing the required attributes
+api_instance = Telstra_Messaging_Old.ProvisioningApi(Telstra_Messaging_Old.ApiClient(configuration))
+body = Telstra_Messaging_Old.ProvisionNumberRequest() # ProvisionNumberRequest | A JSON payload containing the required attributes
 
 try:
     # Create Subscription
@@ -90,17 +90,17 @@ Delete a mobile number subscription from an account
 ```python
 from __future__ import print_function
 import time
-import Telstra_Messaging
-from Telstra_Messaging.rest import ApiException
+import Telstra_Messaging_Old
+from Telstra_Messaging_Old.rest import ApiException
 from pprint import pprint
-configuration = Telstra_Messaging.Configuration()
+configuration = Telstra_Messaging_Old.Configuration()
 # Configure OAuth2 access token for authorization: auth
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # Defining host is optional and default to https://tapi.telstra.com/v2
 configuration.host = "https://tapi.telstra.com/v2"
 # Create an instance of the API class
-api_instance = Telstra_Messaging.ProvisioningApi(Telstra_Messaging.ApiClient(configuration))
+api_instance = Telstra_Messaging_Old.ProvisioningApi(Telstra_Messaging_Old.ApiClient(configuration))
 body = Telstra_Messaging.DeleteNumberRequest() # DeleteNumberRequest | EmptyArr
 
 try:

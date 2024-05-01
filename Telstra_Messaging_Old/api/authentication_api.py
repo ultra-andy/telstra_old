@@ -17,8 +17,8 @@ import re  # noqa: F401
 # python 2 and python 3 compatibility library
 import six
 
-from Telstra_Messaging.api_client import ApiClient
-from Telstra_Messaging.exceptions import (
+from Telstra_Messaging_Old.api_client import ApiClient
+from Telstra_Messaging_Old.exceptions import (
     ApiTypeError,
     ApiValueError
 )

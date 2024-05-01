@@ -15,7 +15,7 @@ import re  # noqa: F401
 
 import six
 
-from Telstra_Messaging.configuration import Configuration
+from Telstra_Messaging_Old.configuration import Configuration
 
 
 class OAuthResponse(object):

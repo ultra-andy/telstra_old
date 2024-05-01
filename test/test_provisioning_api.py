@@ -14,16 +14,16 @@ from __future__ import absolute_import
 
 import unittest
 
-import Telstra_Messaging
-from Telstra_Messaging.api.provisioning_api import ProvisioningApi  # noqa: E501
-from Telstra_Messaging.rest import ApiException
+import Telstra_Messaging_Old
+from Telstra_Messaging_Old.api.provisioning_api import ProvisioningApi  # noqa: E501
+from Telstra_Messaging_Old.rest import ApiException
 
 
 class TestProvisioningApi(unittest.TestCase):
     """ProvisioningApi unit test stubs"""
 
     def setUp(self):
-        self.api = Telstra_Messaging.api.provisioning_api.ProvisioningApi()  # noqa: E501
+        self.api = Telstra_Messaging_Old.api.provisioning_api.ProvisioningApi()  # noqa: E501
 
     def tearDown(self):
         pass
